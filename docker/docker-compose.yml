@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  backend:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - AWS_ACCESS_KEY=your_key
+      - AWS_SECRET_KEY=your_secret
+      - AWS_REGION=ap-south-1
+      - S3_BUCKET=my_bucket
